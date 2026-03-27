@@ -2,37 +2,6 @@
 
 **API REST de gestion intelligente des déchets et de valorisation circulaire à Madagascar**
 
----
-
-## Sommaire
-
- 1. [Titre du projet](#1-titre-du-projet)
- 2. [Contexte](#2-contexte)
- 3. [Problématique](#3-problématique)
- 4. [Objectif général](#4-objectif-général)
- 5. [Objectifs spécifiques](#5-objectifs-spécifiques)
- 6. [Acteurs du système](#6-acteurs-du-système)
- 7. [Modèle conceptuel des données (MCD)](#7-modèle-conceptuel-des-données-mcd)
- 8. [Relations entre les entités](#8-relations-entre-les-entités)
- 9. [Description fonctionnelle du cycle métier](#9-description-fonctionnelle-du-cycle-métier)
- 10. [Règles de gestion](#10-règles-de-gestion)
- 11. [Périmètre technique du projet](#11-périmètre-technique-du-projet)
- 12. [Structure détaillée des ressources REST](#12-structure-détaillée-des-ressources-rest)
- 13. [Filtres recommandés](#13-filtres-recommandés)
- 14. [Endpoints d’agrégation](#14-endpoints-dagrégation)
- 15. [HATEOAS](#15-hateoas)
- 16. [Choix techniques recommandés](#16-choix-techniques-recommandés)
- 17. [Structure technique recommandée](#17-structure-technique-recommandée)
- 18. [Données de démonstration](#18-données-de-démonstration)
- 19. [Scénario d’utilisation](#19-scénario-dutilisation)
- 20. [Schéma logique simplifié](#20-schéma-logique-simplifié)
- 21. [Valeur ajoutée du projet](#21-valeur-ajoutée-du-projet)
- 22. [Formulation finale du sujet](#22-formulation-finale-du-sujet)
- 23. [Résumé court pour présentation orale](#23-résumé-court-pour-présentation-orale)
- 24. [Sources et Références](#24-sources-et-références)
-
----
-
 ## 1. Titre du projet
 **EcoMada Collect** – API REST de gestion intelligente des déchets et de valorisation circulaire à Madagascar
 
