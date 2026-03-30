@@ -60,11 +60,11 @@ public class DataInitializer implements CommandLineRunner {
         // Roles
         Role adminRole = getOrCreateRole("ADMIN");
         Role citoyenRole = getOrCreateRole("CITOYEN");
-        getOrCreateRole("COLLECTEUR");
-        getOrCreateRole("RECYCLEUR");
+        Role collecteurRole = getOrCreateRole("COLLECTEUR");
+        Role recycleurRole = getOrCreateRole("RECYCLEUR");
 
         // Statuts
-        Status registered = getOrCreateStatus("ENREGISTRE", 1);
+        getOrCreateStatus("ENREGISTRE", 1);
         Status collectedStatus = getOrCreateStatus("COLLECTE", 2);
         Status transferred = getOrCreateStatus("TRANSFERE", 3);
         Status valorized = getOrCreateStatus("VALORISE", 4);
@@ -89,7 +89,7 @@ public class DataInitializer implements CommandLineRunner {
         // Quartiers
         Quartier analakely = getOrCreateQuartier("Analakely", tanaRenivohitra);
         Quartier isotry = getOrCreateQuartier("Isotry", tanaRenivohitra);
-        Quartier ambodivona = getOrCreateQuartier("Ambodivona", ambohidratrimo);
+        getOrCreateQuartier("Ambodivona", ambohidratrimo);
         Quartier anjoma = getOrCreateQuartier("Anjoma", toamasinaI);
 
         // Adresses
@@ -106,6 +106,8 @@ public class DataInitializer implements CommandLineRunner {
         getOrCreateUser("Admin System", "admin@ecomada.mg", "password123", adminRole);
         User rakoto = getOrCreateUser("Rakoto Jean", "rakoto@ecomada.mg", "password123", citoyenRole);
         User rasoa = getOrCreateUser("Rasoa Marie", "rasoa@ecomada.mg", "password123", citoyenRole);
+        getOrCreateUser("Collecteur Pro", "collecteur@ecomada.mg", "password123", collecteurRole);
+        getOrCreateUser("Recycleur Expert", "recycleur@ecomada.mg", "password123", recycleurRole);
 
         // Collecteurs
         Collecteur express = getOrCreateCollecteur("Collecte Express", "034 00 000 01");
@@ -149,7 +151,7 @@ public class DataInitializer implements CommandLineRunner {
             // D4: 2.0kg Metal, Rasoa Marie, Point Toamasina Port, ENREGISTRE
             depotRepository.save(Depot.builder()
                     .poidsKg(2.0).dateDepot(LocalDateTime.now().minusDays(1)).user(rasoa)
-                    .pointCollecte(p3).typeDechet(metal).status(registered).build());
+                    .pointCollecte(p3).typeDechet(metal).status(getOrCreateStatus("ENREGISTRE", 1)).build());
         }
     }
 
