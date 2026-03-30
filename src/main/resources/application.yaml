@@ -23,7 +23,7 @@ spring:
     defer-datasource-initialization: true
   sql:
     init:
-      mode: always
+      mode: never
 
 jwt:
   secret: ZWNvbWFkYUNvbGxlY3RTZWNyZXRLZXlGb3JKV1RBdXRoZW50aWNhdGlvbjIwMjY=
