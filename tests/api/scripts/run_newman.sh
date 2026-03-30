@@ -2,8 +2,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
-COLLECTION_FILE="$PROJECT_ROOT/postman/ecomada-collect.postman_collection.json"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+COLLECTION_FILE="$REPO_ROOT/tests/api/postman/ecomada-collect.postman_collection.json"
 
 DEFAULT_REMOTE_URL="https://ecomada-collect-c8395a62a36e.herokuapp.com"
 DEFAULT_LOCAL_URL="http://localhost:8090"

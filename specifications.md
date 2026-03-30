@@ -68,6 +68,7 @@ La collection `tests/api/postman/ecomada-collect.postman_collection.json` couvre
 * **Collecteur** : mises à jour de statut `COLLECTE` et `TRANSFERE`.
 * **Recycleur** : mise à jour `VALORISE` + endpoint de performance.
 * **Assertions** : vérification automatique des statuts `200/201/204/404` selon le type de requête.
+* **Automatisation CLI** : exécution bout-en-bout possible via `tests/api/scripts/run_newman.sh`.
 
 ## 13. Filtres recommandés
 Recherches par `villeId`, `statusId`, `typeDechetId`, `dateMin/Max`, et `actif` (pour les points et recycleurs).

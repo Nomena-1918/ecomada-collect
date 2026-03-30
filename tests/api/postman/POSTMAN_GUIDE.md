@@ -67,3 +67,15 @@ Chaque requête intègre des assertions Postman.
    - Distant : `https://ecomada-collect-c8395a62a36e.herokuapp.com`
    - Local : `http://localhost:8090`
 4. Relancer **Login All (Automatisation Totale)** avant de reprendre les tests.
+
+## 6. Exécution Automatisée avec Newman
+Un script prêt à l'emploi est disponible : `tests/api/scripts/run_newman.sh`
+
+Exemples :
+- Distant (Heroku, défaut) : `bash tests/api/scripts/run_newman.sh`
+- Local : `bash tests/api/scripts/run_newman.sh local`
+- URL personnalisée : `bash tests/api/scripts/run_newman.sh https://mon-api.exemple.com`
+
+Prérequis Newman :
+- `newman` installé globalement (`npm install -g newman`)
+- ou `npx` disponible (le script utilisera `npx --yes newman` automatiquement)
